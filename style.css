@@ -1,0 +1,93 @@
+  
+html, body {
+    margin : 0;
+    padding: 0;
+}
+.array, .form{
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin : 20px 30px;
+    border: dotted 10px solid #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+}
+.kuis{
+    text-align: center;
+    width: 60%;
+    margin: 30px;
+    padding: 0 8px;
+}
+.form{
+    background-color:#000000;
+}
+.jawaban{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.column{
+    margin: 20px;
+}
+.tweets{
+    width: 15rem;
+    height:6rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column a{
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column b{
+  float: right;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item3 { grid-area: 1 / 1 / 2 / 2; }
+.item4 { grid-area: 1 / 2 / 2 / 3; }
+.item5 { grid-area: 2 / 1 / 3 / 2; }
+.item6 { grid-area: 2 / 2 / 3 / 3; }
+</style>
